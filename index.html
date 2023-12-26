@@ -1,0 +1,376 @@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saba Fathi's Portfolio-Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontweome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  body {
+    font-family: 'roboto', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .sidebar {
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    position: fixed;
+    left: 0;
+    width: 35.1%;
+    height: 100%;
+    background: #f6f9fb;
+  }
+
+  .profile-tag {
+    border-radius: 50%;
+    height: 145px;
+    object-fit: cover;
+    object-position: center;
+    width: 145px;
+  }
+
+  img {
+    border-style: none;
+    vertical-align: middle;
+
+  }
+
+  .profile {
+    padding: 0 0 45px 0;
+  }
+
+
+  .img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .grid-wrapper>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-wrapper>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .grid-wrapper {
+    display: block;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    padding: 0px 0px 0px 551px;
+
+  }
+
+  .grid-wrapper.wide {
+    grid-column: span 2;
+  }
+
+  .grid-wrapper.tall {
+    grid-row: span 2;
+
+  }
+
+  .grid-wrapper.big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .saba {
+    font-size: 36px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+    z-index: 1;
+    font-size: 8px;
+    padding: 20% 0% 0% 0%;
+
+    display: grid;
+    background-color: #f6f9fb;
+    position: absolute;
+    top: 570px;
+    right: 0px;
+    box-shadow: -17px -19px 20px 12px #f6f9fb;
+    text-align: center;
+    padding: 100px 20px 20px 20px;
+    font: 1.2em sans-serif;
+
+
+  }
+
+
+  .title {
+    text-align: center;
+    margin: 24px 0px 24px 0px;
+    padding: 24px 24px 0px 24px;
+  }
+
+
+  .ux {
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  }
+
+  .paragraph {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(103, 102, 102);
+    padding: 6% 0% 0% 0%;
+  }
+
+
+
+  .navbar ul {
+    align-items: center;
+  }
+
+  .navbar li {
+    display: inline-block;
+    list-style: none;
+
+  }
+
+  .navbar li a {
+    font-size: 18px;
+    padding: 0px 10px;
+    color: rgb(163, 161, 161);
+    text-decoration: none;
+  }
+
+  .navbar li a:hover {
+    color: black;
+    transform: all 0.4s ease 0s;
+  }
+
+
+
+  .title img {
+    height: 423.3px;
+    width: 423.3px;
+  }
+
+  .h1 {
+    font-size: 24px;
+    font-family: mulish;
+    color: #282a2b;
+  }
+
+  .row-cols-2>* {
+    flex: 0 0 auto;
+    width: 47.5%;
+  }
+
+  .symbol {
+    padding: 0px 10px;
+    color: #000;
+  }
+
+  .sym {
+    display: flex;
+    padding: 0px 148px 0px 148px;
+    align-items: center;
+
+  }
+
+  .drop {
+    background-color: #f6f9fb;
+    width: 451px;
+    height: 255px;
+    border: 1px dotted #f6f9fb;
+    overflow-y: scroll;
+    /* Add the ability to scroll */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .drop::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .drop {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .sym ul {
+    text-align: center;
+  }
+
+  .sym li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .sym li a {
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 0px 8px;
+    color: rgb(39, 28, 28);
+    text-decoration: none;
+  }
+
+  .sym li a:hover {
+    color: black;
+    transform: all 0.4s ease 0s;
+  }
+  .webt1 {
+    color: black;
+  }
+
+  .webt1 ul {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .webt1 li {
+    display: inline-block;
+    list-style: none;
+  }
+
+  .webt1 li a {
+    font-size: 35px;
+    text-transform: uppercase;
+    padding: 0px 8px;
+    color: rgb(39, 28, 28);
+    text-decoration: none;
+  }
+
+  .webt1 li a:hover {
+    color: black;
+    transform: all 0.4s ease 0s;
+  }
+
+</style>
+
+<body>
+  <div class="sidebar">
+    <div class="profile"><img class="profile-tag" src="Images/profile.jpg" alt="#" width="stylesheet"></div>
+    <div class="webt1">
+      <ul>
+     <li><a href="https://medium.com/@saba.fathi"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a></li>
+      <li><a href="https://medium.com/@saba.fathi"><i class="fa fa-facebook-square" style="font-size:36px"></i></a></li>
+      </ul>
+    </div>
+    <div class="drop">
+      <div class="saba">
+        <p><b>Saba Fathi</b></p>
+      </div>
+      <div class="ux">
+        <p><b>UX Reseacher</b></p>
+      </div>
+      <div class="paragraph">
+        <p>Extermly motivated to contanly devlop my skill <br>and grow professionally.
+          <br> I am confident in my ability to come up with intresting <br>ideas for unforgettable designing and
+          problem-
+          <br> solving.
+        </p>
+      </div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="SABA_PATHI.html"><i class=""></i> Home</a></li>
+        <li><a href="About.html"><i class=""></i>About</a></li>
+        <li><a href="Contact.html"><i class=""></i>Contact</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="grid-wrapper">
+
+
+
+
+
+    <div class="container">
+      <div class="row row-cols-2">
+        <div class="col">
+          <div class="title"><img src="Images/b1.jpeg" alt="#">
+            <p class="h1">Bring automation on the table</p>
+            <p>The new post purchase in Filghtio</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title"><img src="Images/b2.jpeg" alt="#">
+            <p class="h1">Snapping (Online taxi service) and <br>Parents</p>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="title"><img src="Images/b3.jpeg" alt="#">
+            <p class="h1">Routetian case study</p>
+            <p>How to persuade trail users to play ones reseachers</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title"><img src="Images/b4.jpeg" alt="#">
+            <p class="h1">UX Reseacher in Flightio</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title"><img src="Images/b5.jpeg" alt="#">
+            <p class="h1">Snapping (Online taxi service) and <br>Parents</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title"><img src="Images/b6.jpeg" alt="#">
+            <p class="h1">Routetian case study</p>
+            <p>How to persuade trail users to play ones reseachers</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="title"><img src="Images/b7.jpeg" alt="#">
+            <p class="h1">Snapping (Online taxi service) and <br>Parents</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
